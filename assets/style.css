@@ -1,0 +1,33 @@
+html,
+body {
+  font-family: 'Lora', serif;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+a,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.5s;
+}
+
+.page-enter,
+.page-leave-active {
+  opacity: 0;
+}
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
