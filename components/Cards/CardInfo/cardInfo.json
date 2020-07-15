@@ -8,8 +8,9 @@
   },
   {
     "id": 2,
-    "title": "A little about myself",
+    "title": "Udemy Nuxt fullstack course",
     "thumbnail": "https://udemy-certificate.s3.amazonaws.com/image/UC-1c040258-a24b-4b79-8503-c82deab58846.jpg?v=1594256972000",
-    "description": ""
+    "description": "Maximilian Schwarzmüller teaches the core and fundamentals of Nuxtjs framework. That includes CRUD operations, state, Firebase storage and authentication.",
+    "link": "https://www.udemy.com/certificate/UC-1c040258-a24b-4b79-8503-c82deab58846/"
   }
 ]

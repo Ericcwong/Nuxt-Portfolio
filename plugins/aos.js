@@ -4,9 +4,8 @@ export default ({
   app
 }) => {
   app.AOS = new AOS.init({
-    startEvent: "load",
-    disable: "phone",
-
+    startEvent: 'DOMContentLoaded',
+    disable: false,
     once: false
   });
 }

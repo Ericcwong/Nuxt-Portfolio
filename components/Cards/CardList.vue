@@ -1,13 +1,16 @@
 <template>
   <section class="cardList">
-    <Card
-      v-for="CardData in cardData"
-      :key="CardData.id"
-      :id="CardData.id"
-      :thumbnail="CardData.thumbnail"
-      :title="CardData.title"
-      :description="CardData.description"
-    />
+    <b-card-group>
+      <Card
+        v-for="CardData in cardData"
+        :key="CardData.id"
+        :id="CardData.id"
+        :thumbnail="CardData.thumbnail"
+        :title="CardData.title"
+        :description="CardData.description"
+        :link="CardData.link"
+      />
+    </b-card-group>
   </section>
 </template>
 
@@ -32,5 +35,6 @@ export default {
   display: flex;
   padding: 20px;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 </style>

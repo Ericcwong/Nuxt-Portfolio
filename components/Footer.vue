@@ -28,30 +28,33 @@
             <h5>Quick Links</h5>
             <ul>
               <li class="icons">
-                <a href="/" v-b-tooltip.hover title="Home">
+                <nuxt-link to="/" v-b-tooltip.hover title="Home">
                   <font-awesome-icon :icon="['fas', 'home']" />
-                </a>
+                </nuxt-link>
               </li>
               <li class="icons">
-                <a href="#" v-b-tooltip.hover title="PortFolio">
+                <nuxt-link to="/projects" v-b-tooltip.hover title="PortFolio">
                   <font-awesome-icon :icon="['fas', 'briefcase']" />
-                </a>
+                </nuxt-link>
               </li>
               <li class="icons">
-                <a href="#" v-b-tooltip.hover title="Resume">
+                <nuxt-link to="/resume" v-b-tooltip.hover title="Resume">
                   <!-- Reason its so long is because fontawesome didnt have the icon but bootstrap did -->
                   <font-awesome-icon :icon="['fas', 'file-pdf']" />
-                </a>
+                </nuxt-link>
               </li>
               <li class="icons">
-                <a href="#" v-b-tooltip.hover title="About Me">
+                <nuxt-link to="/about" v-b-tooltip.hover title="About Me">
                   <font-awesome-icon :icon="['fas', 'address-card']" />
-                </a>
+                </nuxt-link>
               </li>
               <li class="icons">
-                <a href="#" v-b-tooltip.hover title="Contact" v-b-toggle.directive-variant>
-                  <font-awesome-icon :icon="['fas', 'comment-dots']" />
-                </a>
+                <b-button
+                  class="navLink my-2 my-sm-0 ml-2"
+                  variant="outline-secondary"
+                  v-b-toggle.directive-variant
+                >Contact</b-button>v-b-tooltip.hover title="Contact" v-b-toggle.directive-variant>
+                <font-awesome-icon :icon="['fas', 'comment-dots']" />
               </li>
             </ul>
           </b-col>

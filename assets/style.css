@@ -4,6 +4,7 @@ body {
   max-width: 100%;
   overflow-x: hidden;
 }
+
 a,
 button,
 h1,
@@ -11,7 +12,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+label {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   text-transform: uppercase;
@@ -26,6 +28,7 @@ h6 {
 .page-leave-active {
   opacity: 0;
 }
+
 #app {
   display: flex;
   flex-direction: column;

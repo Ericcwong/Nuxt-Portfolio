@@ -1,11 +1,28 @@
 <template>
-  <article class="cardPreview">
+  <!-- <article class="cardPreview">
     <img class="cardThumbnail" v-bind:src="thumbnail" />
     <div class="cardContent">
       <h1>{{title}}</h1>
       <p>{{description}}</p>
     </div>
-  </article>
+  </article>-->
+  <div>
+    <b-card no-body class="cardPreview overflow-hidden">
+      <b-row no-gutters>
+        <b-col md="6">
+          <b-card-img v-bind:src="thumbnail" alt="Image" class="rounded-0"></b-card-img>
+        </b-col>
+        <b-col md="6">
+          <b-card-body :title="title">
+            <b-card-text>{{description}}</b-card-text>
+          </b-card-body>
+        </b-col>
+      </b-row>
+      <template v-slot:footer>
+        <a :href="link" role="button">Link</a>
+      </template>
+    </b-card>
+  </div>
 </template>
 
 <script>
@@ -27,6 +44,10 @@ export default {
     thumbnail: {
       type: String,
       required: true
+    },
+    link:{
+      type: String,
+      required: true
     }
   }
 };
@@ -40,7 +61,8 @@ export default {
   width: 100%;
 }
 .cardPreview img {
-  width: 100%;
+  max-width: 100%;
+  height: 449px;
 }
 
 a {
@@ -50,7 +72,8 @@ a {
 
 @media (min-width: 850px) {
   .cardPreview {
-    width: 400px;
+    width: 900px;
+    height: auto;
     margin: 10px;
   }
 }
@@ -66,9 +89,4 @@ a {
   padding: 10px;
   text-align: center;
 }
-
-/* a:hover .cardPontent,
-a:active .cardPontent {
-  background-color: #ccc;
-} */
 </style>

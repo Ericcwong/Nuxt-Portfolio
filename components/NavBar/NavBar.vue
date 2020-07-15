@@ -1,9 +1,11 @@
 <template>
   <div class="NavBar">
     <b-navbar toggleable="lg" type="light" variant>
-      <b-navbar-brand href="/" class="title">
-        <h1>Eric Wong</h1>
-        <h2>Portfolio</h2>
+      <b-navbar-brand>
+        <nuxt-link to="/" class="title">
+          <h1>Eric Wong</h1>
+          <h2>Portfolio</h2>
+        </nuxt-link>
       </b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse">
@@ -62,18 +64,7 @@ export default {
   color: black;
   text-align: center;
 }
-.navbar-nav {
-  margin-left: 5px;
-  margin-right: 5px;
-}
 
-.navLink {
-  width: 100%;
-
-  /* display: block; */
-  /* margin-left: 5px;
-  margin-right: 5px; */
-}
 .NavBar {
   background: white;
   border-bottom: 4px solid lightgray;

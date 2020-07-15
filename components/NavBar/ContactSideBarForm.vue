@@ -1,48 +1,38 @@
 <template>
   <div>
-    <h4>Message me here!</h4>
-    <form method="POST" @submit="checkForm">
-      <label>Name</label>
-      <input type="text" name="name" />
-      <!-- <label>Email</label>
-      <input type="email" name="email" />
-      <label>Message</label>
-      <textarea name="message"></textarea>-->
-      <input type="submit" value="submit" />
+    <h4>Message me!</h4>
+    <form action="https://formspree.io/xwkrwqqe" method="POST">
+      <label>
+        Your name:
+        <input type="text" name="name" />
+      </label>
+      <label>
+        Your email:
+        <input type="text" name="_replyto" />
+      </label>
+      <label>
+        Your message:
+        <textarea name="message"></textarea>
+      </label>
+
+      <!-- your other form fields go here -->
+
+      <button type="submit">Send it!</button>
     </form>
   </div>
 </template>
 
-<script>
-export default {
-  name: "ContactSideBarForm",
-  data() {
-    return {
-      name: null
-      //   email: null,
-      //   message: null
-    };
-  },
-  methods: {
-    checkForm: function(e) {
-      if (this.name) {
-        return true;
-      }
 
-      this.errors = [];
-
-      if (!this.name) {
-        this.errors.push("Name required.");
-      }
-
-      e.preventDefault();
-    }
-  }
-};
-</script>
 
 <style scoped>
 input {
   border: black;
+}
+input {
+  width: 100%;
+  border: 1px solid black;
+}
+textarea {
+  width: 100%;
 }
 </style>
