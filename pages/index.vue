@@ -20,12 +20,10 @@
 </template>
 
 <script>
-import Logo from "../components/Logo";
-import HomeInfo from "./home/HomeInfo";
+import HomeInfo from "~/pages/home/HomeInfo"
 
 export default {
   components: {
-    Logo,
     HomeInfo
   },
 head(){
@@ -53,6 +51,7 @@ head(){
   flex-direction: column;
   background: url('~assets/images/homeBackground.jpg') no-repeat center;
   -webkit-background-size: cover;
+  /* background-position: bottom right; */
   /* -moz-background-size: cover; */
   /* -o-background-size: cover; */
   /* background-size: cover; */

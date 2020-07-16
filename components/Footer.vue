@@ -49,12 +49,9 @@
                 </nuxt-link>
               </li>
               <li class="icons">
-                <b-button
-                  class="navLink my-2 my-sm-0 ml-2"
-                  variant="outline-secondary"
-                  v-b-toggle.directive-variant
-                >Contact</b-button>v-b-tooltip.hover title="Contact" v-b-toggle.directive-variant>
-                <font-awesome-icon :icon="['fas', 'comment-dots']" />
+                <a v-b-tooltip.hover title="Contact" v-b-toggle.directive-variant>
+                  <font-awesome-icon :icon="['fas', 'comment-dots']" />
+                </a>
               </li>
             </ul>
           </b-col>
