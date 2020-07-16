@@ -3,8 +3,8 @@
     <b-navbar toggleable="lg" type="light" variant>
       <b-navbar-brand>
         <nuxt-link to="/" class="title">
-          <h1>Eric Wong</h1>
-          <h2>Portfolio</h2>
+          <h1 class="title">Eric Wong</h1>
+          <h2 class="title">Portfolio</h2>
         </nuxt-link>
       </b-navbar-brand>
 
@@ -56,9 +56,9 @@ export default {
 
 <style scoped>
 .title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-weight: 300;
+  /* font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; */
+  /* font-weight: 300; */
   font-size: calc(30px + (50 - 30) * ((100vw - 300px) / (1600 - 300)));
   /* color: #6c757d; */
   color: black;
@@ -68,5 +68,13 @@ export default {
 .NavBar {
   background: white;
   border-bottom: 4px solid lightgray;
+}
+@media only screen and (max-width: 952px) {
+  .btn {
+    width: 100%;
+  }
+  .title {
+    font-size: 4.5vw;
+  }
 }
 </style>

@@ -1,16 +1,22 @@
 <template>
   <article>
-    <b-carousel
-      class="carousel"
-      id="carousel-fade"
-      style="text-shadow: 0px 0px 2px #000"
-      fade
-      indicators
-    >
-      <b-carousel-slide caption="First slide" img-src="https://picsum.photos/1024/480/?image=10"></b-carousel-slide>
-      <b-carousel-slide caption="Second Slide" img-src="https://picsum.photos/1024/480/?image=12"></b-carousel-slide>
-      <b-carousel-slide caption="Third Slide" img-src="https://picsum.photos/1024/480/?image=22"></b-carousel-slide>
-    </b-carousel>
+    <div>
+      <b-carousel
+        id="carousel-fade"
+        style="text-shadow: 0px 0px 2px #000"
+        fade
+        indicators
+        img-width="1024"
+        img-height="480"
+      >
+        <b-carousel-slide caption="First slide" img-src="https://picsum.photos/1024/480/?image=10"></b-carousel-slide>
+        <b-carousel-slide caption="Second Slide" img-src="https://picsum.photos/1024/480/?image=12"></b-carousel-slide>
+        <b-carousel-slide caption="Third Slide" img-src="https://picsum.photos/1024/480/?image=22"></b-carousel-slide>
+      </b-carousel>
+    </div>
+    <section>
+      <h1>test</h1>
+    </section>
   </article>
 </template>
 
@@ -19,10 +25,7 @@ export default {};
 </script>
 
 <style scoped>
-article {
+/* article {
   min-height: 100vh;
-}
-.carousel {
-  height: 100px !important;
-}
+} */
 </style>
