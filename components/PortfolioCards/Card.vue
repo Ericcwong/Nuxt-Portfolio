@@ -12,10 +12,12 @@
         </b-col>
       </b-row>
       <template v-slot:footer>
-        <a :href="link" role="button">Link</a>
-        <div v-show="gitlink === ''">
-          <a :href="gitlink" role="button">Git Link</a>
-        </div>
+        <a :href="deployLink" role="button">
+          <font-awesome-icon :icon="['fas','location-arrow']" />Deploy Link
+        </a>
+        <a :href="githubLink" role="button">
+          <font-awesome-icon :icon="['fab','github']" />GitHub Link
+        </a>
       </template>
     </b-card>
   </div>
@@ -41,10 +43,10 @@ export default {
       type: String,
       required: true
     },
-    link:{
+    deployLink:{
       type: String,
     },
-    gitlink:{
+    githubLink:{
       type: String
     }
   }

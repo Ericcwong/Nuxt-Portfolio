@@ -89,6 +89,7 @@ export default {
 <style scoped>
 .container {
   height: 100%;
+  width: 100%;
 }
 .footer {
   position: relative;
@@ -115,7 +116,7 @@ export default {
   text-align: center;
 }
 .icons {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 ul > li {
   display: inline-block;

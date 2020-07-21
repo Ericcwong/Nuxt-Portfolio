@@ -1,0 +1,26 @@
+[{
+    "id": 1,
+    "title": "Burger",
+    "thumbnail": "portfolioCard/burger.png",
+    "description": "Burger: Is a burger ordering program. User enters what they want in the textarea and it will populate a spot in ordered: section, when the user clicks devour it, the burger order will be sent over to devoured. Thus completeing the application.",
+    "deployLink": "https://ericcwong-burger.herokuapp.com/",
+    "githubLink": "https://github.com/Ericcwong/burger"
+  },
+  {
+    "id": 2,
+    "title": "Budget Tracker",
+    "thumbnail": "portfolioCard/budgetTracker.png",
+    "description": "Budget Tracker is an application that will help you keep track with your spendings!  The best thing about this tracker is that it will work offline! Meaning if you do not have internet connection, you are still able to add or subtract funds and when you do have internet connection. The cached data will be transfered to the online database!",
+    "deployLink": "https://ericcwong-budget-tracker.herokuapp.com/",
+    "githubLink": "https://github.com/Ericcwong/Budget-Tracker"
+  },
+  {
+    "id": 3,
+    "title": "Workout Tracker",
+    "thumbnail": "portfolioCard/workoutTracker.png",
+    "description": "Workout Tracker is a tool that helps you keep track of your workout reps, sets, total amount of weight lifted and more! Workout tracker has a dashboard that will display your progress through out the different types of workouts either being resistance or cardio.",
+    "deployLink": "https://github.com/Ericcwong/Workout-Tracker",
+    "githubLink": "https://github.com/Ericcwong/Workout-Tracker"
+  }
+
+]

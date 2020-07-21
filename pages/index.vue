@@ -7,10 +7,10 @@
 
         <div class="links">
           <nuxt-link to="projects">
-            <h4 data-aos="fade-right" data-aos-duration="3000">Projects</h4>
+            <h4 data-aos="fade-up" data-aos-duration="3000">Projects</h4>
           </nuxt-link>
           <a href="https://www.linkedin.com/in/eric-wong-b721bbb2/" target="_blank">
-            <h4 data-aos="fade-left" data-aos-duration="3000">LinkedIn</h4>
+            <h4 data-aos="fade-up" data-aos-duration="3000">LinkedIn</h4>
           </a>
         </div>
       </div>
