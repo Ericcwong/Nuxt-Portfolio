@@ -5,6 +5,7 @@
         v-for="CardData in cardData"
         :key="CardData.id"
         :id="CardData.id"
+        :framework="CardData.framework"
         :thumbnail="CardData.thumbnail"
         :title="CardData.title"
         :description="CardData.description"
@@ -18,6 +19,7 @@
 <script>
 import Card from "~/components/PortfolioCards/Card";
 import CardData from "~/components/Cards/CardInfo/ReactCardInfo/cardInfo.json";
+console.log(CardData[0].framework)
 export default {
   components: {
     Card

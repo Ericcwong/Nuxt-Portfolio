@@ -21,7 +21,8 @@
     "bootstrap": "^4.5.0",
     "bootstrap-vue": "^2.15.0",
     "nuxt": "^2.13.0",
-    "nuxt-fontawesome": "^0.4.0"
+    "nuxt-fontawesome": "^0.4.0",
+    "shrink-ray-current": "^4.1.2"
   },
   "devDependencies": {
     "eslint-config-prettier": "^6.11.0",

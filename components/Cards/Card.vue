@@ -13,9 +13,6 @@
       </b-row>
       <template v-slot:footer>
         <a :href="link" role="button">Link</a>
-        <div v-show="gitlink === ''">
-          <a :href="gitlink" role="button">Git Link</a>
-        </div>
       </template>
     </b-card>
   </div>

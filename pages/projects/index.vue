@@ -11,45 +11,47 @@
       </div>
     </section>
     <section>
-      <div v-show="selected === 'All'"></div>
-      <div v-show="selected === 'React'">
-        <ReactData />
-      </div>
+      <!-- <ReactData /> -->
     </section>
   </article>
 </template>
 
 <script>
-import ReactData from "./ProjectCards/React"
+import ReactData from "./ProjectCards/"
+
 export default {
   components:{
-    ReactData
+    ReactData,
   },
  //Data for radio buttons
  data() {
-      return {
-        selected: 'Favorite',
-        options: [
-          { text: "Favorite Projects", value: 'Favorite' },
-          { text: 'Nuxt Fullstack', value: 'Nuxt' },
-          { text: 'React Fullstack', value: 'React' },
-          { text: 'Vanilla Fullstack', value: 'Vanilla' },
-          { text: "All Projects", value: 'All' }
-        ]
-      }
-    },
+    return {
+      selected: 'Favorite',
+      options: [
+        { text: "Favorite Projects", value: 'Favorite' },
+        { text: 'Nuxt Fullstack', value: 'Nuxt' },
+        { text: 'React Fullstack', value: 'React' },
+        { text: 'Vanilla Fullstack', value: 'Vanilla' },
+        { text: "All Projects", value: 'All' }
+      ]
+    }
+  },
   //Handles Browsers tab information and search
   head(){
-  return{
-      title: "Eric's Portfolio Projects",
-      meta:[
-        {name: "Project", content: "Web developer portfolio projects"},
-        {name: "keywords", content: "Nuxt, Web developer, Hire me"},
-        {name: "author", content: "Eric Wong"}
-      ]
+    return{
+        title: "Eric's Portfolio Projects",
+        meta:[
+          {name: "Project", content: "Web developer portfolio projects"},
+          {name: "keywords", content: "Nuxt, Web developer, Hire me"},
+          {name: "author", content: "Eric Wong"}
+        ]
+    }
+  },
+  methods:{
+    // ReactFilter(){
+    //   if(selected === React && )
+    // }
   }
-
-}
 };
 </script>
 

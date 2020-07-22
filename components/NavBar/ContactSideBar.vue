@@ -26,7 +26,11 @@
               <p>Phone: 801-931-8459</p>
             </div>
             <div class="socialMedia">
-              <a href="https://www.linkedin.com/in/eric-wong-b721bbb2/" target="_blank">
+              <a
+                rel="noopener"
+                href="https://www.linkedin.com/in/eric-wong-b721bbb2/"
+                target="_blank"
+              >
                 <div class="icon">
                   <font-awesome-icon :icon="['fab', 'linkedin']" />
                 </div>
@@ -34,7 +38,7 @@
               <p>LinkedIn</p>
             </div>
             <div class="socialMedia">
-              <a href="https://github.com/Ericcwong" target="_blank">
+              <a rel="noopener" href="https://github.com/Ericcwong" target="_blank">
                 <div class="icon">
                   <font-awesome-icon :icon="['fab', 'github']" />
                 </div>

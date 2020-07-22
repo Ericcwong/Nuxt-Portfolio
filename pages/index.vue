@@ -9,7 +9,7 @@
           <nuxt-link to="projects">
             <h4 data-aos="fade-up" data-aos-duration="3000">Projects</h4>
           </nuxt-link>
-          <a href="https://www.linkedin.com/in/eric-wong-b721bbb2/" target="_blank">
+          <a rel="noopener" href="https://www.linkedin.com/in/eric-wong-b721bbb2/" target="_blank">
             <h4 data-aos="fade-up" data-aos-duration="3000">LinkedIn</h4>
           </a>
         </div>
@@ -49,7 +49,7 @@ head(){
   align-items: center;
   text-align: center;
   flex-direction: column;
-  background: url('~assets/images/homeBackground.jpg') no-repeat center;
+  background: url('/images/homeBackground.jpg') no-repeat center;
   -webkit-background-size: cover;
   /* background-position: bottom right; */
   /* -moz-background-size: cover; */

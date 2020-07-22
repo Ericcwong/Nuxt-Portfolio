@@ -7,6 +7,7 @@
             <h5>Stay Connected</h5>
             <div class="icons">
               <a
+                rel="noopener"
                 href="https://www.linkedin.com/in/eric-wong-b721bbb2/"
                 target="_blank"
                 v-b-tooltip.hover
@@ -16,6 +17,7 @@
               </a>
               <a
                 href="https://github.com/ericcwong"
+                rel="noopener"
                 target="_blank"
                 v-b-tooltip.hover
                 title="Github"

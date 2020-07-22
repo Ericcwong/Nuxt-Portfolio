@@ -1,4 +1,6 @@
+import shrinkRay from "shrink-ray-current"
 export default {
+
   /*
    ** Nuxt rendering mode
    ** See https://nuxtjs.org/api/configuration-mode
@@ -105,5 +107,8 @@ export default {
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
    */
-  build: {}
+  build: {},
+  render: {
+    compressor: shrinkRay()
+  }
 }
