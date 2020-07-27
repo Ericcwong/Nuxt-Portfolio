@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card" data-aos-duration="2000" v-bind:data-aos="classes">
     <b-card no-body class="cardPreview overflow-hidden h-100">
       <b-row no-gutters>
         <b-col md="7">
@@ -42,6 +42,9 @@ export default {
     id: {
       type: Number,
       required: true,
+    },
+    classes: {
+      type: String,
     },
     title: {
       type: String,

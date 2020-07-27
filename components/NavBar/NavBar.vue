@@ -45,22 +45,19 @@
 </template>
 
 <script>
-import ContactSideBar from "./ContactSideBar";
+import ContactSideBar from './ContactSideBar'
 export default {
-  name: "NavBar",
+  name: 'NavBar',
   components: {
-    ContactSideBar
-  }
-};
+    ContactSideBar,
+  },
+}
 </script>
 
 <style scoped>
 .title {
-  /* font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; */
-  /* font-weight: 300; */
-  font-size: calc(30px + (50 - 30) * ((100vw - 300px) / (1600 - 300)));
-  /* color: #6c757d; */
+  font-size: 3rem;
+  /* font-size: calc(30px + (50 - 30) * ((100vw - 300px) / (1600 - 300))); */
   color: black;
   text-align: center;
 }

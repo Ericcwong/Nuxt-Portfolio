@@ -20,24 +20,23 @@
 </template>
 
 <script>
-import HomeInfo from "~/pages/home/HomeInfo"
+import HomeInfo from '~/pages/home/HomeInfo'
 
 export default {
   components: {
-    HomeInfo
+    HomeInfo,
   },
-head(){
-  return{
+  head() {
+    return {
       title: "Eric's Portfolio Home",
-      meta:[
-        {name: "Home", content: "Web developer portfolio"},
-        {name: "keywords", content: "Nuxt, Web developer, Hire me"},
-        {name: "author", content: "Eric Wong"}
-      ]
-  }
-
+      meta: [
+        { name: 'Home', content: 'Web developer portfolio' },
+        { name: 'keywords', content: 'Nuxt, Web developer, Hire me' },
+        { name: 'author', content: 'Eric Wong' },
+      ],
+    }
+  },
 }
-};
 </script>
 
 <style scoped>
@@ -51,10 +50,6 @@ head(){
   flex-direction: column;
   background: url('/images/homeBackground.jpg') no-repeat center;
   -webkit-background-size: cover;
-  /* background-position: bottom right; */
-  /* -moz-background-size: cover; */
-  /* -o-background-size: cover; */
-  /* background-size: cover; */
 }
 .title,
 h1,

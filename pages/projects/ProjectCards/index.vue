@@ -3,6 +3,7 @@
     <Card
       v-for="CardData in cardData"
       :key="CardData.id"
+      :classes="CardData.classes"
       :id="CardData.id"
       :framework="CardData.framework"
       :thumbnail="CardData.thumbnail"
