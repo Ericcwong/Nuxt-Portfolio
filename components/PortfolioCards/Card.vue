@@ -1,13 +1,25 @@
 <template>
-  <div>
-    <b-card no-body class="cardPreview overflow-hidden">
+  <div class="card">
+    <b-card no-body class="cardPreview overflow-hidden h-100">
       <b-row no-gutters>
-        <b-col md="6">
-          <b-card-img v-bind:src="thumbnail" alt="Image" class="rounded-0"></b-card-img>
+        <b-col md="7">
+          <b-card-img
+            v-bind:src="thumbnail"
+            :srcset="`${thumbnail} 1x, ${thumbnail} 2x`"
+            alt="Image"
+            class="rounded-0"
+          ></b-card-img>
         </b-col>
-        <b-col md="6">
-          <b-card-body :title="title">
-            <b-card-text>{{description}}</b-card-text>
+        <b-col md="5">
+          <b-card-body>
+            <b-card-title>{{title}}</b-card-title>
+            <b-card-sub-title>Framework: {{framework}}</b-card-sub-title>
+            <br />
+            <b-card-text>
+              {{description}}
+              <br />
+              {{subDescription}}
+            </b-card-text>
           </b-card-body>
         </b-col>
       </b-row>
@@ -25,44 +37,53 @@
 
 <script>
 export default {
-  name: "Card",
+  name: 'Card',
   props: {
     id: {
       type: Number,
-      required: true
+      required: true,
     },
     title: {
       type: String,
-      required: true
+      required: true,
     },
     description: {
       type: String,
-      required: true
+      required: true,
+    },
+    subDescription: {
+      type: String,
     },
     thumbnail: {
       type: String,
-      required: true
+      required: true,
     },
-    deployLink:{
+    deployLink: {
       type: String,
     },
-    githubLink:{
-      type: String
-    }
-  }
-};
+    githubLink: {
+      type: String,
+    },
+    framework: {
+      type: String,
+    },
+  },
+}
 </script>
 
 <style scoped>
+.card {
+  border: none;
+}
 .cardPreview {
-  border: 1px solid #ccc;
+  border: 1px solid lightgray;
   box-shadow: 0 2px 2px #ccc;
   background-color: white;
   width: 100%;
 }
-.cardPreview img {
-  max-width: 100%;
-  height: 449px;
+
+.card-subtitle {
+  border-bottom: 1px solid darkgray;
 }
 
 a {

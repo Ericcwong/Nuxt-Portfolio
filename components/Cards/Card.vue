@@ -20,37 +20,36 @@
 
 <script>
 export default {
-  name: "Card",
+  name: 'Card',
   props: {
     id: {
       type: Number,
-      required: true
+      required: true,
     },
     title: {
       type: String,
-      required: true
+      required: true,
     },
     description: {
       type: String,
-      required: true
+      required: true,
     },
     thumbnail: {
       type: String,
-      required: true
+      required: true,
     },
-    link:{
+    link: {
       type: String,
     },
-    gitlink:{
-      type: String
-    }
-  }
-};
+    gitlink: {
+      type: String,
+    },
+  },
+}
 </script>
 
 <style scoped>
 .cardPreview {
-  border: 1px solid #ccc;
   box-shadow: 0 2px 2px #ccc;
   background-color: white;
   width: 100%;
