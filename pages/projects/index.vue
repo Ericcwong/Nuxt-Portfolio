@@ -1,7 +1,9 @@
 <template>
   <article>
     <section>
-      <div class="heading">Projects that I have developed during my bootcamp and on my own.</div>
+      <div class="heading">
+        <h1>that I have developed during my bootcamp and independently.</h1>
+      </div>
     </section>
     <section class="cards">
       <CardData />
@@ -33,8 +35,10 @@ export default {
 
 <style scoped>
 .heading {
-  font-size: 18px;
+  font-size: 40px;
   text-align: center;
+  color: white;
+  background-color: lightgray;
 }
 .cards {
   display: flex;
