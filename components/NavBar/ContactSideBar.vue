@@ -46,7 +46,6 @@
               <p>Github</p>
             </div>
           </div>
-          <ContactSideBarForm />
         </div>
       </div>
     </b-sidebar>
@@ -54,12 +53,8 @@
 </template>
 
 <script>
-import ContactSideBarForm from "./ContactSideBarForm";
 export default {
-  name: "ContactSideBar",
-  components: {
-    ContactSideBarForm
-  }
+  name: "ContactSideBar"
 };
 </script>
 
