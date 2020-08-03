@@ -1,4 +1,4 @@
-<template>
+<!--<template>
   <div>
     <h4>Message me!</h4>
     <form action="https://formspree.io/xwkrwqqe" method="POST">
@@ -15,16 +15,16 @@
         <textarea name="message"></textarea>
       </label>
 
-      <!-- your other form fields go here -->
 
       <button type="submit">Send it!</button>
     </form>
   </div>
-</template>
+</template> 
+-->
 
 
 
-<style scoped>
+<!--<style scoped>
 input {
   border: black;
 }
@@ -35,4 +35,4 @@ input {
 textarea {
   width: 100%;
 }
-</style>
+</style> -->

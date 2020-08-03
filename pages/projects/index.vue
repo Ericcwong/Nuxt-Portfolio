@@ -2,7 +2,7 @@
   <article>
     <section>
       <div class="heading">
-        <h1>that I have developed during my bootcamp and independently.</h1>
+        <h1>that I have developed during my bootcamp and independently</h1>
       </div>
     </section>
     <section class="cards">
@@ -37,7 +37,7 @@ export default {
 .heading {
   font-size: 40px;
   text-align: center;
-  color: white;
+  color: black;
   background-color: lightgray;
 }
 .cards {

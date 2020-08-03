@@ -10,7 +10,7 @@
             <b-card-body>
               <b-card-title class="title" title="I like to build, break, and fix things"></b-card-title>
               <b-card-text>
-                <strong>Hello and welcome!</strong> My name is Eric Wong I am 23 years old currently living in West Jordan, Utah. A little about myself I am the only boy in the family surrounded with four amazing sisters.
+                <strong>Hello and welcome!</strong> My name is Eric Wong I am currently living in West Jordan, Utah. A little about myself I am the only boy in the family surrounded with four amazing sisters.
                 Hobbies consist of building keyboard, photography, family time, and gaming!
                 I recently graduated from University of Utah's full stack web developer bootcamp. While in the bootcamp I learned a lot more than just coding.
                 While I was there I was able to build new habits along with new connections, learn to challenge myself and ask questions or help when I am lost or stuck,
