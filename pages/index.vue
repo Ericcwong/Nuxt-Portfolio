@@ -48,7 +48,7 @@ export default {
   align-items: center;
   text-align: center;
   flex-direction: column;
-  background: url('/images/homeBackground.jpg') no-repeat center;
+  background-image: url('/images/homeBackground.JPG') no-repeat center;
   -webkit-background-size: cover;
 }
 .title,

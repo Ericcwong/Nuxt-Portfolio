@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import Card from '~/components/PortfolioCards/Card'
+import Card from '~/components/PortfolioCards/PortfolioCard'
 import CardData from '~/components/Cards/CardInfo/ReactCardInfo/cardInfo.json'
 export default {
   components: {
