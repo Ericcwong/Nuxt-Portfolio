@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import CardData from './ProjectCards/'
+import CardData from '~/components/PortfolioCards/PortfolioCardList'
 
 export default {
   components: {

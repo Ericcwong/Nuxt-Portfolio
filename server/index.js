@@ -2,6 +2,7 @@ const express = require('express')
 const consola = require('consola')
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
+const compression = require("compression");
 const {
   Nuxt,
   Builder
@@ -29,6 +30,7 @@ async function start() {
   }
 
   // Give nuxt middleware to express
+  app.use(compression());
   app.use(nuxt.render)
   app.use(bodyParser.urlencoded({
     extended: true

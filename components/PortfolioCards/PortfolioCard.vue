@@ -1,3 +1,4 @@
+<!-- Structures portfolio cards-->
 <template>
   <div class="card" data-aos-duration="2000" v-bind:data-aos="classes">
     <b-card no-body class="cardPreview overflow-hidden h-100">

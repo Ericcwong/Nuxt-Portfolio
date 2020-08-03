@@ -1,3 +1,4 @@
+<!--Structures the Home Cards -->
 <template>
   <div>
     <b-card no-body class="cardPreview overflow-hidden">
@@ -55,21 +56,13 @@ export default {
   width: 100%;
 }
 .cardPreview img {
-  max-width: 100%;
-  height: 449px;
+  /* max-width: 60%;
+  height: 449px; */
 }
 
 a {
   text-decoration: none;
   color: black;
-}
-
-@media (min-width: 850px) {
-  .cardPreview {
-    width: 900px;
-    height: auto;
-    margin: 10px;
-  }
 }
 
 .cardThumbnail {
@@ -82,5 +75,12 @@ a {
 .cardContent {
   padding: 10px;
   text-align: center;
+}
+@media (min-width: 850px) {
+  .cardPreview {
+    width: 900px;
+    height: auto;
+    margin: 10px;
+  }
 }
 </style>

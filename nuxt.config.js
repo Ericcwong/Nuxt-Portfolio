@@ -1,11 +1,10 @@
-import shrinkRay from "shrink-ray-current"
 export default {
 
   /*
    ** Nuxt rendering mode
    ** See https://nuxtjs.org/api/configuration-mode
    */
-  mode: 'universal',
+  mode: 'production',
   /*
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
@@ -68,6 +67,17 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
+    // [
+    //   "nuxt-compress",
+    //   {
+    //     gzip: {
+    //       cache: true
+    //     },
+    //     brotli: {
+    //       threshold: 10240
+    //     }
+    //   }
+    // ],
     // Doc: https://bootstrap-vue.js.org
     'bootstrap-vue/nuxt',
     // Doc: https://axios.nuxtjs.org/usage
@@ -107,8 +117,61 @@ export default {
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
    */
-  build: {},
-  render: {
-    compressor: shrinkRay()
+  build: {
+    extend(config, {
+      isDev,
+      isClient
+    }) {
+      config.module.rules.forEach(rule => {
+        if (String(rule.test) === String(/\.(png|jpe?g|gif|svg|webp)$/)) {
+          // add a second loader when loading images
+          rule.use.push({
+            loader: 'image-webpack-loader',
+            options: {
+              svgo: {
+                plugins: [
+                  // use these settings for internet explorer for proper scalable SVGs
+                  // https://css-tricks.com/scale-svg/
+                  {
+                    removeViewBox: false
+                  },
+                  {
+                    removeDimensions: true
+                  }
+                ]
+              }
+            }
+          })
+        }
+      })
+    },
+    extend(config, {
+      isDev,
+      isClient
+    }) {
+      // adding the new loader as the first in the list
+      config.module.rules.unshift({
+        test: /\.(png|jpe?g|gif)$/,
+        use: {
+          loader: 'responsive-loader',
+          options: {
+            // disable: isDev,
+            placeholder: true,
+            quality: 85,
+            placeholderSize: 30,
+            name: 'img/[name].[hash:hex:7].[width].[ext]',
+            adapter: require('responsive-loader/sharp')
+          }
+        }
+      })
+      // remove old pattern from the older loader
+      config.module.rules.forEach(value => {
+        if (String(value.test) === String(/\.(png|jpe?g|gif|svg|webp)$/)) {
+          // reduce to svg and webp, as other images are handled above
+          value.test = /\.(svg|webp)$/
+          // keep the configuration from image-webpack-loader here unchanged
+        }
+      })
+    }
   }
 }

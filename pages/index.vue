@@ -15,16 +15,16 @@
         </div>
       </div>
     </div>
-    <HomeInfo />
+    <HomeCard />
   </div>
 </template>
 
 <script>
-import HomeInfo from '~/pages/home/HomeInfo'
+import HomeCard from '~/components/HomeCards/HomeCardList'
 
 export default {
   components: {
-    HomeInfo,
+    HomeCard,
   },
   head() {
     return {
@@ -48,7 +48,7 @@ export default {
   align-items: center;
   text-align: center;
   flex-direction: column;
-  background: url('/images/homeBackground.JPG') no-repeat center;
+  background: url('/images/homeBackground.jpg') no-repeat center;
   -webkit-background-size: cover;
 }
 .title,

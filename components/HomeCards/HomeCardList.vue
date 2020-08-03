@@ -1,24 +1,21 @@
+<!--Renders the Home Cards -->
 <template>
   <section class="cardList">
     <Card
       v-for="CardData in cardData"
       :key="CardData.id"
-      :classes="CardData.classes"
       :id="CardData.id"
-      :framework="CardData.framework"
       :thumbnail="CardData.thumbnail"
       :title="CardData.title"
       :description="CardData.description"
-      :subDescription="CardData.subDescription"
-      :deployLink="CardData.deployLink"
-      :githubLink="CardData.githubLink"
+      :link="CardData.link"
     />
   </section>
 </template>
 
 <script>
-import Card from '~/components/PortfolioCards/PortfolioCard'
-import CardData from '~/components/Cards/CardInfo/ReactCardInfo/cardInfo.json'
+import Card from '~/components/HomeCards/HomeCard'
+import CardData from '~/components/HomeCards/HomeCardInfo/cardInfo.json'
 export default {
   components: {
     Card,
@@ -26,7 +23,6 @@ export default {
   data() {
     return {
       cardData: CardData,
-      gitlink: true,
     }
   },
 }
@@ -36,7 +32,8 @@ export default {
 .cardList {
   width: 100%;
   display: flex;
+  padding: 20px;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
 }
 </style>

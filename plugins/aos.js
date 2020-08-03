@@ -6,6 +6,6 @@ export default ({
   app.AOS = new AOS.init({
     startEvent: 'DOMContentLoaded',
     disable: false,
-    once: false
+    once: true
   });
 }

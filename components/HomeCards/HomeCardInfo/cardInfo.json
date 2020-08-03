@@ -1,7 +1,7 @@
 [{
     "id": 1,
     "title": "University of Utah coding full stack web devlopement badge",
-    "thumbnail": "https://i.imgur.com/aicRu7O.png",
+    "thumbnail": "images/cardImages/homeCard/UofUBadge.png",
     "description": "After 24 weeks I was presented with a certificate. The certificate demonstrate knowledge of Bootstrap, React, MongoDB, MySQL, Node.js, just to highlight a few skills. ",
     "link": "https://www.youracclaim.com/badges/4f4cf79e-c7df-42cc-85ea-8b2afd5dc963/linked_in"
 

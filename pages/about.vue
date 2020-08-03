@@ -30,7 +30,7 @@
       <b-card no-body class="overflow-hidden">
         <b-row no-gutters>
           <b-col md="6">
-            <b-card-img src="images/keyboard.png" alt="Image" class="rounded-0"></b-card-img>
+            <b-card-img src="images/keyboard.webp" alt="Image" class="rounded-0"></b-card-img>
           </b-col>
           <b-col md="6">
             <b-card-body>
