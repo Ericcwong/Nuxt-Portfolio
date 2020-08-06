@@ -71,7 +71,7 @@ export default {
     width: 100%;
   }
   .title {
-    font-size: 4.5vw;
+    font-size: 4vw;
   }
 }
 </style>

@@ -4,7 +4,7 @@ export default {
    ** Nuxt rendering mode
    ** See https://nuxtjs.org/api/configuration-mode
    */
-  mode: 'production',
+  mode: 'universial',
   /*
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target

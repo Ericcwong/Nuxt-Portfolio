@@ -3,10 +3,10 @@
   <div>
     <b-card no-body class="cardPreview overflow-hidden">
       <b-row no-gutters>
-        <b-col md="6">
+        <b-col md="4">
           <b-card-img v-bind:src="thumbnail" alt="Image" class="rounded-0"></b-card-img>
         </b-col>
-        <b-col md="6">
+        <b-col md="7">
           <b-card-body :title="title">
             <b-card-text>{{description}}</b-card-text>
           </b-card-body>
@@ -53,11 +53,9 @@ export default {
 .cardPreview {
   box-shadow: 0 2px 2px #ccc;
   background-color: white;
-  width: 100%;
 }
 .cardPreview img {
-  /* max-width: 60%;
-  height: 449px; */
+  height: 275px;
 }
 
 a {
@@ -81,6 +79,11 @@ a {
     width: 900px;
     height: auto;
     margin: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .cardPreview img {
+    height: 100%;
   }
 }
 </style>
