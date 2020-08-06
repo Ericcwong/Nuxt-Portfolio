@@ -41,7 +41,7 @@ export default {
 
 <style scoped>
 .home {
-  background: url('/images/homeBackground.jpg') no-repeat center;
+  background: url('~@/static/images/homeBackground.jpg') no-repeat center;
   margin: 0 auto;
   min-height: 90vh;
   display: flex;
