@@ -41,6 +41,7 @@ export default {
 
 <style scoped>
 .home {
+  background: url('/images/homeBackground.jpg') no-repeat center;
   margin: 0 auto;
   min-height: 90vh;
   display: flex;
@@ -48,7 +49,7 @@ export default {
   align-items: center;
   text-align: center;
   flex-direction: column;
-  background-image: url('/images/homeBackground.jpg') no-repeat center;
+
   -webkit-background-size: cover;
 }
 .title,
