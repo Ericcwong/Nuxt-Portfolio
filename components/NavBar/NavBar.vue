@@ -27,9 +27,9 @@
           <nuxt-link to="projects">
             <b-button class="navLink my-2 my-sm-0 ml-2" variant="outline-secondary">Projects</b-button>
           </nuxt-link>
-          <nuxt-link to="resume">
+          <a href="Resume.pdf" target="_blank">
             <b-button class="navLink my-2 my-sm-0 ml-2" variant="outline-secondary">Resume</b-button>
-          </nuxt-link>
+          </a>
           <nuxt-link to="about">
             <b-button class="navLink my-2 my-sm-0 ml-2" variant="outline-secondary">About</b-button>
           </nuxt-link>

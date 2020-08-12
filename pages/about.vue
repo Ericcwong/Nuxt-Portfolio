@@ -10,11 +10,8 @@
             <b-card-body>
               <b-card-title class="title" title="I like to build, break, and fix things"></b-card-title>
               <b-card-text>
-                <strong>Hello and welcome!</strong> My name is Eric Wong I am currently living in West Jordan, Utah. A little about myself I am the only boy in the family surrounded with four amazing sisters.
-                Hobbies consist of building keyboard, photography, family time, and gaming!
-                I recently graduated from University of Utah's full stack web developer bootcamp. While in the bootcamp I learned a lot more than just coding.
-                While I was there I was able to build new habits along with new connections, learn to challenge myself and ask questions or help when I am lost or stuck,
-                and that it is okay to struggle and to take a step back and question what could be causing the problem and how to approach fixed problem from a dissecting the problem.
+                My name is Eric Wong I am currently living in West Jordan, Utah. I recently graduated from University of Utah's full stack web developer bootcamp.
+                Now I am currently job searching and refining my skills while searching.
               </b-card-text>
               <b-card-title class="title" title="Current focus"></b-card-title>
               <b-card-text>
@@ -41,8 +38,6 @@
                 and time consuming keyboard building is if you choose to go with the soldering route. After I was done building the keyboard I was so happy that it was over and two months later I still cannot stop typing on it. Although the build being over I do have to say I do miss the building hobby and I would want
                 to build another one in the near future.
               </b-card-text>
-              <b-card-title class="title" title="Specs"></b-card-title>
-              <b-card-text>The specifications I ended up going with are Zealios v2 65g, KBDfans 75% aluminum case and pcb, and some generic keycaps.</b-card-text>
             </b-card-body>
           </b-col>
         </b-row>
