@@ -10,14 +10,15 @@
             <b-card-body>
               <b-card-title class="title" title="I like to build, break, and fix things"></b-card-title>
               <b-card-text>
-                My name is Eric Wong I am currently living in West Jordan, Utah. I recently graduated from University of Utah's full stack web developer bootcamp.
-                Now I am currently job searching and refining my skills while searching.
+                Hello, Eric here! I am currently living in West Jordan, Utah. I recently graduated from University of Utah's full stack web developer bootcamp. I work with Nuxtjs as a front end framework mostly and am familiar with Vue and as well as React.
+                Back end databases I worked with MongoDB and Firebase.
+                I am currently open for any web developer position
               </b-card-text>
               <b-card-title class="title" title="Current focus"></b-card-title>
+              <b-card-text>My focus after the bootcamp is to continue to learn on my own and challenge myself to refine past projects. Along side refining is to find experience in the web development field and entry level position or internship.</b-card-text>
+              <b-card-title class="title" title="Languages and Tech"></b-card-title>
               <b-card-text>
-                My focus after the bootcamp is to continue to learn on my own and challenge myself to refine past projects instead of building new ones. Refining past project would not only refresh my memory on certain skills
-                but to teach myself to dive deeper and face different challenge. Along side refining is to find experience in the web development field and entry level position or internship. If you know or have a position for me, it would mean the world to me if
-                I would be given an opportunity to be a team player. Thank you!
+                <LanguageIcons />
               </b-card-text>
             </b-card-body>
           </b-col>
@@ -47,7 +48,11 @@
 </template>
 
 <script>
+import LanguageIcons from '~/components/About/LanguageIcons'
 export default {
+  components: {
+    LanguageIcons,
+  },
   head() {
     return {
       title: "Eric's Portfolio About",
