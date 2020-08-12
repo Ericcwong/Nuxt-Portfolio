@@ -12,6 +12,9 @@
           <a rel="noopener" href="https://www.linkedin.com/in/eric-wong-b721bbb2/" target="_blank">
             <h4 data-aos="fade-up" data-aos-duration="3000">LinkedIn</h4>
           </a>
+          <a rel="noopener" href="https://github.com/Ericcwong" target="_blank">
+            <h4 data-aos="fade-up" data-aos-duration="3000">Github</h4>
+          </a>
         </div>
       </div>
     </div>
