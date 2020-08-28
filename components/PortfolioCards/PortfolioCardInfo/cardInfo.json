@@ -1,5 +1,4 @@
-[
-  {
+[{
     "id": 1,
     "classes": "fade-down-right",
     "framework": "Nuxt.js",
@@ -37,7 +36,7 @@
     "title": "Simple Weather App",
     "thumbnail": "portfolioCard/weatherApp.PNG",
     "description": "A weather app that scratching the surface of a weather application. It currently allows the user to search a city and it will show off the current weather.",
-    "subDescription": "Future implements would be to add 7 day forcast, wind speed, and other weather related information",
+    "subDescription": "Future implements would be to add 7 day forcast, wind speed, and other weather related information.",
     "deployLink": "https://ericcwong-weatherapp.herokuapp.com/",
     "githubLink": "https://github.com/Ericcwong/SimpleWeatherApp"
   },
