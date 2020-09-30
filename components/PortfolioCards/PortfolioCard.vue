@@ -94,6 +94,10 @@ a {
   text-decoration: none;
   color: black;
 }
+.card-footer{
+  display: flex;
+  justify-content: space-evenly;
+}
 
 @media (min-width: 850px) {
   .cardPreview {
