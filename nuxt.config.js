@@ -67,6 +67,7 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
+    '@nuxtjs/pwa',
     // [
     //   "nuxt-compress",
     //   {
@@ -119,5 +120,10 @@ export default {
    */
   build: {
 
+  },
+  pwa: {
+    icon: {
+      //  "@static/icon.png"
+    }
   }
 }

@@ -4,19 +4,40 @@
       <b-card no-body class="overflow-hidden">
         <b-row no-gutters>
           <b-col md="5">
-            <b-card-img src="images/selfie.png" alt="Image" class="rounded-0"></b-card-img>
+            <b-card-img
+              src="images/selfie.png"
+              alt="Image"
+              class="rounded-0"
+            ></b-card-img>
           </b-col>
           <b-col md="7">
             <b-card-body>
-              <b-card-title class="title" title="I like to build, break, and fix things"></b-card-title>
+              <b-card-title
+                class="title"
+                title="I like to build, break, and fix things"
+              ></b-card-title>
               <b-card-text>
-                Hello, Eric here! I am currently living in West Jordan, Utah. I recently graduated from University of Utah's full stack web developer bootcamp. I work with Nuxtjs as a front end framework mostly and am familiar with Vue and as well as React.
-                Back end databases I worked with MongoDB and Firebase.
-                I am currently open for any web developer position
+                Hello, Eric here! I am currently living in West Jordan, Utah. I
+                recently graduated from University of Utah's full stack web
+                developer bootcamp. Although, I am familiar with full stack
+                development. I focus mainly in front end development. I work
+                with VueJs and NuxtJS as a front end framework. For back end
+                databases I work mostly with Firebase and am familiar with
+                MongoDB and MySQL.
               </b-card-text>
+              I am currently open for any web developer position.
+
               <b-card-title class="title" title="Current focus"></b-card-title>
-              <b-card-text>My focus after the bootcamp is to continue to learn on my own and challenge myself to refine past projects. Along side refining is to find experience in the web development field and entry level position or internship.</b-card-text>
-              <b-card-title class="title" title="Languages and Tech"></b-card-title>
+              <b-card-text
+                >My focus after the bootcamp is to continue to learn on my own
+                and challenge myself to refine past projects. Along side to
+                refining is to find experience in the web development field as
+                an junior developer or internships if available.</b-card-text
+              >
+              <b-card-title
+                class="title"
+                title="Languages and Tech"
+              ></b-card-title>
               <b-card-text>
                 <LanguageIcons />
               </b-card-text>
@@ -28,16 +49,31 @@
       <b-card no-body class="overflow-hidden">
         <b-row no-gutters>
           <b-col md="6">
-            <b-card-img src="images/keyboard.webp" alt="Image" class="rounded-0"></b-card-img>
+            <b-card-img
+              src="images/keyboard.webp"
+              alt="Image"
+              class="rounded-0"
+            ></b-card-img>
           </b-col>
           <b-col md="6">
             <b-card-body>
-              <b-card-title class="title" title="Custom keyboard"></b-card-title>
+              <b-card-title
+                class="title"
+                title="Custom keyboard"
+              ></b-card-title>
               <b-card-text>
-                A keyboard is something I use on a daily basis and I never thought much of it, that is until I watch a few videos about custom mechanical keyboards. After watching a couple it started to spiral out of control. I started to research on
-                everything that a mechanical keyboard needed reading subreddits and countless videos on how to build one. The videos did not do justifcation on how hard
-                and time consuming keyboard building is if you choose to go with the soldering route. After I was done building the keyboard I was so happy that it was over and two months later I still cannot stop typing on it. Although the build being over I do have to say I do miss the building hobby and I would want
-                to build another one in the near future.
+                A keyboard is something I use on a daily basis and I never
+                thought much of it, that is until I watch a few videos about
+                custom mechanical keyboards. After watching a couple it started
+                to spiral out of control. I started to research on everything
+                that a mechanical keyboard needed reading subreddits and
+                countless videos on how to build one. The videos did not do
+                justifcation on how hard and time consuming keyboard building is
+                if you choose to go with the soldering route. After I was done
+                building the keyboard I was so happy that it was over and two
+                months later I still cannot stop typing on it. Although the
+                build being over I do have to say I do miss the building hobby
+                and I would want to build another one in the near future.
               </b-card-text>
             </b-card-body>
           </b-col>
