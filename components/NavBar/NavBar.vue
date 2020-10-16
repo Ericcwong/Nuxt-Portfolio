@@ -10,8 +10,8 @@
 
       <b-navbar-toggle target="nav-collapse">
         <template v-slot:default="{ expanded }">
-          <font-awesome-icon v-if="expanded" :icon="['fas', 'chevron-up']" />
-          <font-awesome-icon v-else :icon="['fas', 'chevron-down']" />
+          <font-awesome-icon v-if="expanded" style="font-size: 35px" :icon="['fas', 'chevron-up']" />
+          <font-awesome-icon v-else style="font-size: 35px" :icon="['fas', 'chevron-down']" />
           <!-- <b-icon v-if="expanded" font-awesome-icon :icon="['fas', 'envelope']"></b-icon> -->
           <!-- <b-icon v-else font-awesome-icon :icon="['fas', 'envelope']"></b-icon> -->
         </template>
@@ -66,7 +66,7 @@ export default {
   background: white;
   border-bottom: 4px solid lightgray;
 }
-@media only screen and (max-width: 952px) {
+@media only screen and (max-width: 991px) {
   .btn {
     width: 100%;
   }

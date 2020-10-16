@@ -7,6 +7,7 @@
       :classes="CardData.classes"
       :id="CardData.id"
       :framework="CardData.framework"
+      :backendFramework="CardData.backendFramework"
       :thumbnail="CardData.thumbnail"
       :title="CardData.title"
       :description="CardData.description"

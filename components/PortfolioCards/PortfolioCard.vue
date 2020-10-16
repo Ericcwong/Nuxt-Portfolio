@@ -14,7 +14,9 @@
         <b-col md="5">
           <b-card-body>
             <b-card-title>{{title}}</b-card-title>
-            <b-card-sub-title>Framework: {{framework}}</b-card-sub-title>
+            <b-card-sub-title>Frontend framework: {{framework}}</b-card-sub-title>
+            <br>
+            <b-card-sub-title>Database: {{backendFramework}}</b-card-sub-title>
             <br />
             <b-card-text>
               {{description}}
@@ -71,6 +73,9 @@ export default {
     framework: {
       type: String,
     },
+    backendFramework:{
+      type: String
+    }
   },
 }
 </script>
