@@ -30,6 +30,6 @@
     "image-webpack-loader": "^6.0.0",
     "prettier": "^2.0.5",
     "responsive-loader": "^2.0.0",
-    "sharp": "^0.25.4"
+    "sharp": "^0.30.5"
   }
 }
